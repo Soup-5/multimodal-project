@@ -10,140 +10,276 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script defer src="index.js"></script>
-  <title>Eras of Website Design</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Eras of Website Design | Home</title>
 </head>
 <body>
-  <main class="timeline-carousel">
-    <section class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
-      <div class="timeline-carousel__item">
-        <div class="timeline-carousel__image">
-          <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
-        </div>
-        <div class="timeline-carousel__item-inner">
-          <span class="year">1993-2002</span>
-          <span class="month">The Early Web</span>
-          <p>
-            The early web era encompasses web designs from the WWW’s inception at CERN to the early 2000’s, 
-            specifically from around 1993-2002. During this time websites were largely owned by technology 
-            and media companies, with many technology companies such as Microsoft and Yahoo competing 
-            heavily against each other to see who could establish early web standards (Francis and Mills)...
-          </p>
-          <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#earlyWebModal">Read more</button> 
-        </div>
+  <nav class="navbar navbar-dark" style="background-color: #323232;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">EWD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="links" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="citations.html">Citations</a>
+          </li>
+        </ul>
       </div>
-      <div class="timeline-carousel__item">
-        <div class="timeline-carousel__image">
-          <div class="media-wrapper media-wrapper--overlay" style="background: url() center center; background-size:cover;"></div>
-        </div>
-        <div class="timeline-carousel__item-inner">
-          <span class="year">2003-2012</span>
-          <span class="month">The User Web</span>
-          <p>
-            The user web era follows the crash of the dot-com bubble and the rise of the internet’s first 
-            social networks such as Myspace, Facebook, and Reddit (Emery). This era mainly spans from 2003-2012, 
-            where following the dot-com crash governments started to pay more attention to the WWW, leading to 
-            increased accessibility and digital safety regulations...
-          </p>
-          <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#userWebModal">Read more</button>
-          <!-- Modal w/ full description -->
-          <div id="userWebModal" class="modal fade">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-
-                </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-body">
-
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
+    </div>
+  </nav>
+  <header class="bg-image" style="padding: 8rem; background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url('images/hero.jpg'); background-position: center;">
+    <div class="hero container mx-auto text-center w-75" style="color: #ffc107;">
+      <h1>Eras of Website Design</h1>
+      <p>A deep dive into the evolution of web design</p>
+    </div>
+  </header>
+  <main>
+    <article class="introduction mx-auto w-75 pt-5">
+      <h1>Why this Exists?</h1>
+      <p>
+        The World Wide Web (WWW) is playing an important role in the development of society in the 21st century. The 
+        mass proliferation of internet usage by both consumers and businesses alike has led to an increased importance 
+        in having a presence online, and with the wide variety of tools and professional services available at this 
+        point in time it’s arguably not hard to build one. The WWW wasn’t always this accessible, and like many other 
+        technologies seen throughout human history has gone through various iterations and accepted standards. The 
+        protocol itself started out as an experiment in CERN by Tim Berners-Lee as a method of cross-referencing the 
+        text of research papers from across the world (Longman). However, interest from corporations and governments 
+        quickly led to widespread implementation and usage worldwide. As the WWW went through its own phases of iteration 
+        to reach the standard we know today, so did web design in its own way adapt with each of these iterations to 
+        match with the tools and knowledge available. These adaptations can be classified and viewed as their own eras 
+        of design: the early web, the user web, the standardized web, and the modern web.
+      </p>
+    </article>
+    <section class="timeline-carousel">
+      <div class="container mx-auto text-center mb-5">
+        <h1>Timeline</h1>
       </div>
-      <div class="timeline-carousel__item">
-        <div class="timeline-carousel__image">
-          <div class="media-wrapper media-wrapper--overlay" style="background: url() center center; background-size:cover;"></div>
+      <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+        <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('images/early.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+            <span class="year">1993-2002</span>
+            <span class="month">The Early Web</span>
+            <p>
+              The early web era encompasses web designs from the WWW’s inception at CERN to the early 2000’s, 
+              specifically from around 1993-2002. During this time websites were largely owned by technology 
+              and media companies, with many technology companies such as Microsoft and Yahoo competing 
+              heavily against each other to see who could establish early web standards (Francis and Mills)...
+            </p>
+            <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#earlyWebModal">Read more</button> 
+          </div>
         </div>
-        <div class="timeline-carousel__item-inner">
-          <span class="year">2012-2017</span>
-          <span class="month">The Standardized Web</span>
-          <p>
-            The standardized web era can be viewed as the “industrial revolution” of both web development and 
-            design, spanning from 2012-2017 and bringing web design to follow most of the same standards and 
-            practices we see today. With the popularity of Apple’s smartphones on the market and their ability 
-            to browse the web using safari...
-          </p>
-          <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#standardizedWebModel">Read more</button>
-          <!-- Modal w/ full description -->
-          <div id="standardizedWebModel" class="modal fade">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-
-                </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-body">
-                  
-                </div>
-              </div>
-            </div>
-          </div> 
+        <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('images/user.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+            <span class="year">2003-2012</span>
+            <span class="month">The User Web</span>
+            <p>
+              The user web era follows the crash of the dot-com bubble and the rise of the internet’s first 
+              social networks such as Myspace, Facebook, and Reddit (Emery). This era mainly spans from 2003-2012, 
+              where following the dot-com crash governments started to pay more attention to the WWW, leading to 
+              increased accessibility and digital safety regulations...
+            </p>
+            <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#userWebModal">Read more</button>
+          </div>
         </div>
-      </div>
-      <div class="timeline-carousel__item">
-        <div class="timeline-carousel__image">
-          <div class="media-wrapper media-wrapper--overlay" style="background: url() center center; background-size:cover;"></div>
+        <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('images/standardized.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+            <span class="year">2012-2017</span>
+            <span class="month">The Standardized Web</span>
+            <p>
+              The standardized web era can be viewed as the “industrial revolution” of both web development and 
+              design, spanning from 2012-2017 and bringing web design to follow most of the same standards and 
+              practices we see today. With the popularity of Apple’s smartphones on the market and their ability 
+              to browse the web using safari...
+            </p>
+            <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#standardizedWebModel">Read more</button>
+          </div>
         </div>
-        <div class="timeline-carousel__item-inner">
-          <span class="year">2018-Present</span>
-          <span class="month">The Modern Web</span>
-          <p>
-            The modern web era classifies everything from 2018 to present day. Most web design protocols and 
-            standards have been solidified at this point, and while there are of course more and more advancements 
-            in web-based technologies no new heavily altering features have been introduced in web browsers...
-          </p>
-          <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#modernWebModal">Read more</button>
-          <!-- Modal w/ full description -->
-          <div id="modernWebModal" class="modal fade">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-
-                </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-body">
-                  
-                </div>
-              </div>
-            </div>
-          </div> 
+        <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url('images/modern.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+            <span class="year">2018-Present</span>
+            <span class="month">The Modern Web</span>
+            <p>
+              The modern web era classifies everything from 2018 to present day. Most web design protocols and 
+              standards have been solidified at this point, and while there are of course more and more advancements 
+              in web-based technologies no new heavily altering features have been introduced in web browsers...
+            </p>
+            <button type="button" class="read-more" data-bs-toggle="modal" data-bs-target="#modernWebModal">Read more</button> 
+          </div>
         </div>
       </div>
     </section>
-  </main>
-  <!-- Modal w/ full description -->
-  <div id="earlyWebModal" class="modal fade">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          Modal body..
-        </div>
-        <div class="modal-body">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    <section class="modals">
+      <div id="earlyWebModal" class="modal fade">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content" style="color: white; background-color: #323232;">
+            <div class="modal-header">
+              <h4 class="modal-title">The Early Web</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h5>The beginning of it all...</h5>
+              <p class="py-3">
+                The early web era encompasses web designs from the WWW’s inception at CERN to the early 2000’s, 
+                specifically from around 1993-2002. During this time websites were largely owned by technology 
+                and media companies, with many technology companies such as Microsoft and Yahoo competing heavily 
+                against each other to see who could establish early web standards (Francis and Mills). This led to 
+                the principle of websites being designed with the owner’s best interests in mind over the consumer, 
+                with most sites being designed on the principle of advertising content to the viewer. Additionally, 
+                with only around 20-40 html tags available and the limited abilities of css, the html “tables” tag 
+                was creatively used to create clean and orderly block layouts which were present on almost every 
+                major site. Furthermore, the image capabilities of browsers was also incredibly limited, and with 
+                the corporate domination of the web at this point images were mainly used to showcase advertisement 
+                banners. These design principles can be seen in examples such as Microsoft's website designs from 1994-1999, 
+                which focused on promoting Microsoft’s web technologies above all else and later as a method of garnering 
+                support against its DOJ case in 1998 (Version Museum).
+              </p>
+              <div class="ratio ratio-16x9">
+                <iframe style="max-width: 100%;height: 100%;" src="https://web.archive.org/web/19981205060735/http://microsoft.com/"></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <div id="userWebModal" class="modal fade">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content" style="color: white; background-color: #323232;">
+            <div class="modal-header">
+              <h4 class="modal-title">The User Web</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h5>The tides change...</h5>
+              <p class="py-3">
+                The user web era follows the crash of the dot-com bubble and the rise of the internet’s first social
+                networks such as Myspace, Facebook, and Reddit (Emery). This era mainly spans from 2003-2012, where 
+                following the dot-com crash governments started to pay more attention to the WWW, leading to increased 
+                accessibility and digital safety regulations. This was seen through the introduction of tools such as 
+                Wordpress, along with the rise in social networks such as Myspace and Facebook, all of which made it 
+                increasingly accessible for the average consumer to have a presence on the internet (Web Design Museum). 
+                Additionally, with the advancements made in consumer web browsers websites had a lot more freedom to 
+                make use of some of the more experimental technologies that were introduced in the 1990s. This was 
+                mainly noticeable through the increased usage in css features such as the box model (which removed the 
+                need for using “table” html tags for design purposes), larger images, and a higher variety of colors 
+                and fonts. With the increased web traffic the design methodology for web pages had shifted from 
+                corporation-centered to user-centered design. Websites were designed similarly to physical control panels, 
+                with higher contrast placed on elements such as buttons and textboxes that the user was supposed to 
+                interact with. This was especially noticeable on Microsoft’s website designs from 2005-2011, which shifted 
+                from promoting microsoft’s web technologies to instead focusing on showcasing the newest release of 
+                microsoft products, both digital and physical, with large image banners (Version Museum). The traditional 
+                “forum” design started to become normalized as a method of user-focused design as well, being implemented 
+                in most social networking sites at the time.
+              </p>
+              <div class="ratio ratio-16x9">
+                <iframe style="max-width: 100%;height: 100%;" src="https://web.archive.org/web/20070320090619/http://microsoft.com/"></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div id="standardizedWebModel" class="modal fade">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content" style="color: white; background-color: #323232;">
+            <div class="modal-header">
+              <h4 class="modal-title">The Standardized Web</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h5>A new standard...</h5>
+              <p class="py-3">
+                The standardized web era can be viewed as the “industrial revolution” of both web development and design, 
+                spanning from 2012-2017 and bringing web design to follow most of the same standards and practices we 
+                see today. With the popularity of Apple’s smartphones on the market and their ability to browse the web 
+                using safari, mobile-centered responsive design started to become incredibly prominent (Shelley). 
+                Additionally, it was now incredibly simple for any business or person to set up their own website, and 
+                for experienced developers to make more complicated websites using javascript frameworks. CSS features 
+                such as flexbox and the popularity of svg images created a growing trend of sites ditching the table-like 
+                structure that was common in the late 90’s and early 20’s in favor of designs that scaled with screen 
+                resolution in order to work on any new device that was released (such as smartphones and tablets) (Shelley). 
+                This can be seen on Microsoft's homepage designs from 2012-2014, which begin to forgo the table like 
+                structure seen in previous years (Version Museum). The release of the Bootstrap CSS framework by the team 
+                at twitter made it incredibly easy for sites to implement this responsive design, and improvements in the 
+                features of javascript and libraries such as Jquery allowed for websites to be much more interactive on the 
+                frontend and less reliant on a backend, saving computation costs of servers.
+              </p>
+              <div class="ratio ratio-16x9">
+                <iframe style="max-width: 100%;height: 100%;" src="https://web.archive.org/web/20131208053014/http://www.microsoft.com/en-us/default.aspx"></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modernWebModal" class="modal fade">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content" style="color: white; background-color: #323232;">
+            <div class="modal-header">
+              <h4 class="modal-title">The Standardized Web</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Present day...</h5>
+              <p class="py-3">
+                The modern web era classifies everything from 2018 to present day. Most web design protocols and 
+                standards have been solidified at this point, and while there are of course more and more advancements 
+                in web-based technologies no new heavily altering features have been introduced in web browsers. Due to 
+                the oversaturation of web developers in the market and overall accessibility of web development as a craft, 
+                CSS frameworks have begun to fall out of favor as more and more sites have frontend developers create 
+                specialized designs. This can be seen in the designs of websites such as Microsoft’s and Github’s, both of 
+                which completely forgo using a box-like structure and instead make use of completely dynamic layouts with 
+                animated UI buttons and figures (Version Museum). 
+              </p>
+              <div class="ratio ratio-16x9">
+                <iframe style="max-width: 100%;height: 100%;" src="https://web.archive.org/web/20231204000839/https://www.microsoft.com/en-us/"></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="conclusion mx-auto w-75 pb-5">
+      <h1>Looking to the Future</h1>
+      <p>
+        Each era of web design showcases a different approach to design philosophy, evolving from the limited corporate 
+        designs in the 1990’s to the more user-centered dynamic designs of modern day. The modern web is considered to 
+        currently be at a tipping point, with the increased capabilities of artificial intelligence and cryptography 
+        being two of the main drivers toward a new era of the web. By looking back on design history, we can see the 
+        differences between each era and how the design philosophy of the next era of the web might be formed.
+      </p>
+    </article>
+  </main>
+  <footer class="text-center p-3" style="background-color: #424242; color: white;">
+    <p>© 2023 Copyright Soup-5</p>
+  </footer>   
 </body>
 </html>

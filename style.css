@@ -4,6 +4,11 @@
   outline: none;
 }
 
+main {
+  background-color: #323232;
+  color: white;
+}
+
 .timeline-carousel {
   margin: 0;
   background-color: #323232;
@@ -219,4 +224,34 @@
 
 .slick-next {
   right: 30px;
+}
+
+.introduction, .conclusion {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.introduction h1, .conclusion h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.hero {
+  color: white;
+}
+
+.hero h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2rem;
 }
